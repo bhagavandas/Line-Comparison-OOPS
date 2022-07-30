@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class lineComparison {
 	static int r;
-	static int res;
+	static int res=0;
 	public static void UC1() {
 		
 		Start obj = new Start();
 		obj.UC2();
+		obj.UC3();
 			Scanner scan =new Scanner(System.in);
 			System.out.println("Enter x1 value: ");
 			int x1=scan.nextInt();
@@ -46,4 +47,14 @@ public class lineComparison {
 			System.out.println("Two lines are not equal");
 		}
 	}
+	 public static void UC3() {
+		 lineComparison obj=new lineComparison();
+			
+			if(r>res) {
+				System.out.println("Line1 is greater than Line2");
+			}
+			else {
+				System.out.println("Line1 is less than Line2");
+			}
+}
 }
