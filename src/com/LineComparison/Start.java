@@ -1,14 +1,18 @@
 package com.LineComparison;
 
-public class Start extends lineComparison {
-	static int r, res;
-	public static void main(String[] args) {
-		 lineComparison obj=new lineComparison();
+public class Start {
+	public static double Line1;
+	public static double Line2;
+	
+	public static void main(String[] args) { 
 		System.out.println("Welcome to Line Comparison");
-		UC1();
-		System.out.println("Length of Line1 is: " + r);
-		UC2();
-		UC3();
+		lineComparison obj=new lineComparison();
+		obj.UC1();	
+		obj.UC2();
+		obj.UC3();
+		obj.UC4(Line1, Line2);
+		
+	
 		
 		
 	
